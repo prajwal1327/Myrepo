@@ -1,3 +1,5 @@
+#new release 
+#1.2 modified file path
 #!/bin/bash
 percent=`df -h . | awk 'NR==2 {print $(NF-1)}' | sed 's/%/ /g'`
 if [ $percent -gt 30 ] 

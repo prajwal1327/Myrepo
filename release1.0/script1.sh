@@ -1,3 +1,5 @@
+#new release 
+#1.2 modified file path
 #!/bin/bash
 ls -ltr | awk 'NR>1 {print $NF}' > /home/ubuntu/remove
 count=`cat  ../ remove | wc -l`
