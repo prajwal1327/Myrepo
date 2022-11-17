@@ -1,7 +1,7 @@
 #factorial of n numbers
 
 #!/bin/bash
-array="5 8 9 20 30 40"
+array="4 3 5 8 9 20 30 40"
 for i in $array
 do 
 	temp=$i
