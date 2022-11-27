@@ -9,7 +9,7 @@ sh tomcat/bin/startup.sh
 rm -rf conf-and-webapps-file
 git clone https://github.com/syedwaliuddin/conf-and-webapps-file.git
 rm -rf tomcat/conf/tomcat-users.xml
-cp conf-and-webapps-file/tomcat-users.xml /opt/tomcat/conf/
+cp conf-and-webapps-file/tomcat-users.xml tomcat/conf/
 sh tomcat/bin/startup.sh
 rm -rf tomcat/webapps/manager/META-INF/context.xml
 cp conf-and-webapps-file/context.xml tomcat/webapps/manager/META-INF/
@@ -17,4 +17,4 @@ rm -rf tomcat/webapps/host-manager/META-INF/context.xml
 cp conf-and-webapps-file/contexthm.xml tomcat/webapps/host-manager/META-INF/
 sh tomcat/bin/startup.sh
 rm -rf conf-and-webapps-file
-rm -rf apache-tomcat-10.0.27
+rm -rf tomcat
