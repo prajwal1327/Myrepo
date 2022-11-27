@@ -1,8 +1,5 @@
 #!/bin/bash
-echo "enter the value of a"
-$a
-echo "enter the value of b"
-$b
-  sum=`expr $a + $b`
-  echo "the sum of two numbers:$sum"
-
+# Calculate the sum via command-line arguments
+# $1 and $2 refers to the first and second argument passed as command-line arguments
+sum=$(( $1 + $2 ))
+echo "Sum is: $sum"
