@@ -16,8 +16,8 @@ cp conf-and-webapps-file/context.xml tomcat/webapps/manager/META-INF/
 rm -rf tomcat/webapps/host-manager/META-INF/context.xml
 cp conf-and-webapps-file/contexthm.xml tomcat/webapps/host-manager/META-INF/
 sh tomcat/bin/startup.sh
-apt update
-apt install maven
+apt update -y
+apt install maven -y
 #delete the existing folder/code to execute the fresh command
 rm -rf hello-world-war
 #need to clone first
