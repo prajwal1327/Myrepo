@@ -10,7 +10,7 @@ rm -rf conf-and-webapps-file
 git clone https://github.com/syedwaliuddin/conf-and-webapps-file.git
 rm -rf /opt/tomcat/conf/tomcat-users.xml
 cp conf-and-webapps-file/tomcat-users.xml /opt/tomcat/conf/
-sh /opt/tomcat/bin/startup.sh
+sh tomcat/bin/startup.sh
 rm -rf /opt/tomcat/webapps/manager/META-INF/context.xml
 cp conf-and-webapps-file/context.xml /opt/tomcat/webapps/manager/META-INF/
 rm -rf /opt/tomcat/webapps/host-manager/META-INF/context.xml
